@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng và thành toán</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-center">
+            <div class="box-nav">
+                <div class="logo-box-nav">
+                    <a href="./index.html"><img src="./img/Mask group (2).png" alt=""></a>
+                </div>
+                <div class="muc-luc-nav">
+                    <ul>
+                        <li><a href="./category.html">iPhone</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">Apple Watch</a></li>
+                        <li><a href="#">Âm thanh</a></li>
+                        <li><a href="#">Phụ Kiện</a></li>
+                        <li><a href="#">Flash sale</a></li>
+                        <li><a href="#">Thông tin</a>
+                            <ul>
+                                <li><a href="../view/lienhe.php">Liên hệ</a></li>
+                                <li><a href="../view/gioithieu.php">Giới thiệu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-nav">
+                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                </div>
+                <div class="search-nav">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <div class="gio-hang-nav gio-hang">
+                    <a href="./cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                    <span class="amount" id="amount"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box-title">
+
+            <ul class="ul-box-nav">
+                <li><a href="./index.html">Trang chủ <p>/</p></a></li>
+                <li><a href="./category.html">Giỏ hàng <p></p></a></li>
+            </ul>
+            <style>
+                .box-review-left {
+
+                    margin-right: 30px;
+                }
+
+                .product-order {
+                    padding: 10px;
+                    border-radius: 7px;
+                    background: #fff;
+                }
+
+                table {
+                    width: 100%;
+                }
+
+                table thead th {
+                    text-align: left;
+                }
+
+                table tbody img {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                tbody .image,
+                .content,
+                .price,
+                .quantily,
+                .remove {
+                    padding: 20px 16px;
+                    vertical-align: top;
+                }
+
+                tbody .quantily input {
+                    outline: none;
+                    border: none;
+                    border-radius: 6px;
+                    padding: 4px;
+                    text-align: center;
+                }
+
+                tbody .content {
+                    width: 33%;
+                }
+
+                tbody .content p {
+                    margin: 3px 0;
+                    font-size: 15px;
+                    color: #86868B;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                tbody .content a {
+                    text-decoration: none;
+                }
+
+                thead th {
+                    padding: 16px 16px;
+                }
+
+                .box_btn_table {
+                    text-align: right;
+
+                }
+
+                .box_btn_table button {
+                    background: transparent;
+                    border: 1px solid #0066CC;
+                    text-decoration: none;
+                    color: #0066CC;
+                    border-radius: 7px;
+                    padding: 10px 20px;
+                }
+
+                .box_btn_table button a {
+                    color: #0066CC;
+                    text-decoration: none;
+                }
+
+                .box_btn_table button:nth-child(2) {
+                    margin-left: 10px;
+                }
+            </style>
+            <div class="box-review">
+                <div class="box-review-left">
+                    <div class="product-order">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Hình ảnh</th>
+                                    <th scope="col">Tên sản phẩm</th>
+                                    <th scope="col">Giá bán</th>
+                                    <th scope="col">Số lượng</th>
+                                    <th scope="col">Tổng tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody id="renderProdBy">
+                                <!-- <tr>
+                                    <td class="image"><img
+                                            src="./img/product_tet/0007808_iphone-14-pro-max-128gb_415.png" alt=""></td>
+                                    <td class="content">
+                                        <b>iPhone 14 Pro Max 128GB</b>
+                                        <p>Khu vực: Khu vực Miền Bắc</p>
+                                        <p>Hình thức: Mua hàng</p>
+                                        <p>Màu sắc: Sliver</p>
+                                        <span><a href="#">Sửa</a></span>
+                                    </td>
+                                    <td class="price"><b>29.990.000</b> đ</td>
+                                    <td class="quantily"><input type="number" min="1" max="20" value="1"></td>
+                                    <td class="remove"><i class="fa-regular fa-trash-can"></i></td>
+                                </tr> -->
+
+                                <!-- <div class="gr1">
+                                    <div class="btn__up">
+                                        <i class="fa-solid fa-sort-up"></i>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                    <input type="text" value="" id="qtyCard">
+                                </div> -->
+                            </tbody>
+                        </table>
+                        <div class="box_btn_table">
+                            <button><a href="./cart.html">Cập nhật giỏ hàng</a></button></td>
+                            <button><a href="./category.html">Tiếp tục mua sắm</a></button>
+                        </div>
+                    </div>
+                    <style>
+                        .box_profile_user_order {
+                            width: 100%;
+                        }
+
+                        .padding_boxx_profile {
+                            border-radius: 7px;
+                            padding: 20px;
+                            background: #fff;
+                        }
+
+                        .box_padding_profile h3 {
+                            margin: 17px 0px 10px 0px;
+                            font-size: 17px;
+                        }
+
+                        .box_padding_profile p {
+                            margin: 0;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+
+                        .name {
+                            width: 97.5%;
+                        }
+
+                        .box_profile {
+                            display: flex;
+        
+                        }
+
+                        .phone,
+                        .Email{
+                            width: 95%;
+                        }
+
+                        .name,
+                        .phone,
+                        .Email,
+                        .thanh_pho,
+                        .ditris {
+                            color: #8d8b8b;
+                            margin: 14px 0px;
+                            outline: none;
+                            border: 1px solid #a8a6a6;
+                            font-size: 17px;
+                            padding: 10px 0px 10px 16px;
+                            border-radius: 7px;
+                        }
+
+                        .thanh_pho,
+                        .ditris {
+                            width: 100%;
+                        }
+
+                        .box_profile1 {
+                            display: flex;
+                            margin: 10px 0px;
+                        }
+                       
+                        .box_checkBox {
+
+                            align-items: baseline;
+                            font-size: 15px;
+                            color: #424243;
+                        }
+
+                        .box_checkBox:nth-child(2) {
+                            margin-left: 10px;
+                        }
+
+                        .box_1 {
+                            width: 50%;
+                        }
+
+                        .box_1:nth-child(2) {
+                            margin-left: 14px;
+                        }
+                    </style>
+                    <div class="box_profile_user_order">
+                        <h2>Thông tin thanh toán</h2>
+                        <div class="padding_boxx_profile">
+                            <div class="box_padding_profile">
+                                <input type="text" class="name" placeholder="Tên" id="nameUser">
+                                <div id="tbName"></div>
+                                <div class="box_profile">
+                                    <div class="box_1">
+                                        <input type="text" class="phone" placeholder="Số điện thoại" id="phoneUser">
+                                        <div id="tbPhone"></div>
+                                    </div>
+                                    <div class="box_1">
+                                        <input type="email" class="Email" placeholder="Email" id="email">
+                                        <div id="tbEmail"></div>
+                                    </div>
+                                </div>
+                                <h3><b>Hình thức nhận hàng</b></h3>
+                                <div class="box_profile1">
+                                    <div class="box_1">
+                                        <label for="">
+                                            <p>Tỉnh, thành phố:</p>
+                                        </label>
+                                        <select class="thanh_pho" id="province">
+                                            <!-- <option value="1">Chọn tỉnh, thành phố</option>
+                                            <option value="2">Bình Phước</option>
+                                            <option value="2">Bình Đinh</option>
+                                            <option value="3">Đồng Nai</option>
+                                            <option value="4">Bạc Liêu</option>
+                                            <option value="5">Dak Lak</option> -->
+                                        </select>
+                                        <div id="tbprovince"></div>
+                                    </div>
+
+                                    <div class="box_1">
+                                        <label for="">
+                                            <p>Quận, huyện:</p>
+                                        </label>
+                                        <select class="ditris" id="district">
+                                            <option disable>Chọn</option>
+                                            <!-- <option value="2">Quận, huyện</option>
+                                            <option value="2">Đồng xoài</option>
+                                            <option value="2">Phú Giáo</option>
+                                            <option value="3">Đồng phú</option>
+                                            <option value="4">Bù đăng</option>
+                                            <option value="5">Bù Đốp</option> -->
+                                        </select>
+                                        <div id="tbditris"></div>
+
+                                    </div>
+                                </div>
+                                <div class="box_profile1">
+                                    <div class="box_checkBox">
+                                        <input type="radio" name="rCheckBox" id="">
+                                        <p>Nhận tại cửa hàng</p>
+                                    </div>
+                                    <div class="box_checkBox">
+                                        <input type="radio" name="rCheckBox" id="">
+                                        <p>Giao tận lơi</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <style>
+                        .box_checkBox2 {
+                            display: flex;
+                            flex-direction: row;
+                            border: 1px solid #616162;
+                            border-radius: 7px;
+                            align-items: center;
+                            padding: 5px;
+                        }
+
+                        .box_checkBox2 img {
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            width: 36px;
+                            height: 36px;
+                            border-radius: 7px;
+                            object-fit: contain;
+                        }
+
+                        .box_chon_thanh_toan {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            gap: 10px;
+
+                        }
+
+                        .box_profile_user_order1 {
+                            background: #fff;
+                            padding: 20px;
+                            margin-top: 20px;
+                            border-radius: 7px;
+                        }
+
+                        .box_profile_user_order1 h4 {
+                            margin: 0;
+                        }
+
+                        .box_profile_user_order1 p {
+                            margin-top: 10px;
+                            font-size: 15px;
+                            color: #616162;
+                        }
+                    </style>
+                    <div class="box_profile_user_order1">
+                        <h4><b>Thông tin thanh toán</b></h4>
+                        <p>Quý kháck vui lòng lựa chọn các hình thức thanh toán dước đây:</p>
+                        <div class="box_chon_thanh_toan">
+                            <div class="box_checkBox2">
+                                <input type="radio" name="rThanhToan" id="">
+                                <img src="./img/icon_thanh_toan/logo.jpg" alt="">
+                                <p><b>Chuyển khoản ngân hàng</b></p>
+                            </div>
+                            <div class="box_checkBox2">
+                                <input type="radio" name="rThanhToan" id="">
+                                <img src="./img/icon_thanh_toan/logo (1).jpg" alt="">
+                                <p><b>Thanh toán OnePay</b></p>
+                            </div>
+                            <div class="box_checkBox2">
+                                <input type="radio" name="rThanhToan" id="">
+                                <img src="./img/icon_thanh_toan/logo (2).jpg" alt="">
+                                <p><b>Thanh toán Payoo</b></p>
+                            </div>
+                            <div class="box_checkBox2">
+                                <input type="radio" name="rThanhToan" id="">
+                                <img src="./img/icon_thanh_toan/logo (4).jpg" alt="">
+                                <p><b>Thanh toán Kredivo</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <style>
+                    .bao-hanh-sp {
+                        position: sticky !important;
+                        top: 70px;
+                        margin: 0;
+                    }
+
+                    .padding_bill {
+                        padding: 22px 20px;
+                    }
+
+                    .input_add_sale {
+                        display: flex;
+                        flex-direction: row;
+                    }
+
+                    .input_add_sale .add__sale {
+                        width: 60%;
+                        outline: none;
+                        padding: 8px 16px;
+                        border-radius: 8px 0 0 8px;
+                        font-size: 17px;
+                        color: #86868B;
+                        border: 1px solid #EBEBEB;
+                    }
+
+                    .input_add_sale .btn_add_sale {
+                        width: 40%;
+                        font-size: 15px;
+                        outline: none;
+                        border: none;
+                        background: #a8a6a6;
+                        border-radius: 0 8px 8px 0;
+                        margin-left: 0;
+                        color: #fff;
+                    }
+
+                    .box_price_all {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        flex-direction: row;
+                    }
+
+                    .box_price_all p {
+                        color: #86868B;
+                        font-size: 15px;
+                    }
+
+                    .box_price_all:nth-child(4) {
+                        margin: 10px 0px;
+                    }
+
+
+                    .box_price_all span {
+                        font-size: 15px;
+                    }
+
+                    .box_price_all span.sum {
+                        color: #0066CC;
+                    }
+
+                    .br {
+                        border-top: 1px solid #86868B;
+                        margin: 23px 0px;
+                    }
+
+                    .input_check {
+                        display: flex;
+                        align-items: baseline;
+                        margin-bottom: 20px;
+                    }
+
+                    .input_check p {
+                        padding-left: 10px;
+                        font-size: 17px;
+                        margin: 0;
+                        color: #616162;
+                    }
+
+                    .input_check p span a {
+                        color: #0066CC;
+                        text-decoration: none;
+                    }
+
+                    .btn_order {
+                        width: 100%;
+                        border: none;
+                        text-decoration: none;
+                        background: #0066CC;
+                        padding: 10px 20px;
+                        border-radius: 7px;
+                    }
+
+                    .btn_order {
+                        font-size: 15px;
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                </style>
+                <div class="box-review-right">
+                    <div class="bao-hanh-sp">
+                        <div class="padding_bill" id="renDerSum">
+                            <div class="input_add_sale">
+                                <input class="add__sale" type="text" name="" id="" placeholder="Mã giảm giá">
+                                <button class="btn_add_sale">Áp dụng</button>
+                            </div>
+                            <div class="box_price_all">
+                                <p>Tổng thu:</p>
+                                <span><b id="sum0"></b> </span>
+                            </div>
+                            <div class="box_price_all">
+                                <p>Thuế:</p>
+                                <span><b>0 ₫</b></span>
+                            </div>
+                            <div class="box_price_all">
+                                <b>Tổng cộng:</b>
+                                <span class="sum"><b id="sum1"></b> </span>
+                            </div>
+                            <div class="br"></div>
+                            <div class="input_check">
+                                <input type="checkbox" name="" id="">
+                                <p>Tôi đã đọc và đồng ý với <span><a href="#">điều khoản và điều kiện</a></span> của
+                                    website</p>
+                            </div>
+                            <button class="btn_order" onclick="checkForm()">Tiến hàng đặt hàng </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe-tu-shopUcha">
+        <div class="box-container-subscribe">
+            <div class="box-subscribe-tu-shopUcha">
+                <div class="subscribe-top-shopUcha">
+                    <h2>Đăng ký nhận từ shopUcha</h2>
+                    <p>Thông tin sản phẩm mới nhất và chương trình khuyến mãi</p>
+                </div>
+                <div class="subscribe-bottom-shopUcha">
+                    <form action="">
+                        <input class="nhap-thong-tin" type="text" placeholder="Email của bạn">
+                        <button type="submit" class="dang-ky"><span>Đăng ký</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="gioi-han-rong-footer">
+            <div class="box-container-footer">
+                <div class="flex-footer-box">
+                    <div class="pr-thuong-hieu-footer">
+                        <div class="logo-shopUcha">
+                            <img src="./img/7600848499_0f8b365e-ac63-41cb-9653-0e62ef28d5b3.png" alt="">
+                        </div>
+                        <div class="revews-shopUcha">
+                            <p>Năm 2020, ShopUcha trở thành đại lý ủy quyền của Apple. Chúng tôi phát triển chuỗi cửa
+                                hàng
+                                tiêu chuẩn và Apple Mono Store nhằm mang đến trải nghiệm tốt nhất về sản phẩm và dịch vụ
+                                của
+                                Apple cho người dùng Việt Nam.</p>
+                        </div>
+                        <ul class="logo-thongtin-ve-thuongmai">
+                            <li><a href="#"><svg width="50" height="50" fill="none">
+                                        <circle cx="25" cy="25" r="24" stroke="#515154" stroke-width="2"></circle>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </svg></a></li>
+                            <li><a href="#"><svg width="50" height="50" fill="none">
+                                        <circle cx="25" cy="25" r="24" stroke="#515154" stroke-width="2"></circle>
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </svg></a></li>
+                            <li><a href="#"><svg width="50" height="50" fill="none">
+                                        <circle cx="25" cy="25" r="24" stroke="#515154" stroke-width="2"></circle>
+                                        <i class="fa-brands fa-mandalorian"></i>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                    <div class="box-sanpham-footer">
+                        <div class="element-sanpham-footer">
+                            <div class="box-san123">
+                                <div class="title-sanham-footer">
+                                    <h2 class="title-sanpham-footer-1">Sản phẩm</h2>
+                                </div>
+                                <div class="element-87b620">
+                                    <ul>
+                                        <li><a href="#">iPhone</a></li>
+                                        <li><a href="#">iPad</a></li>
+                                        <li><a href="#">Mac</a></li>
+                                        <li><a href="#">Apple Watch</a></li>
+                                        <li><a href="#">Âm thanh</a></li>
+                                        <li><a href="#">Phụ kiện</a></li>
+                                        <li><a href="#">Dịch vụ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-thongtin-footer">
+                        <div class="element-thongtin-footer">
+                            <div class="title-thongtin-footer">
+                                <h2 class="title-sanpham-footer-1">Thông tin</h2>
+                            </div>
+                            <div class="element-87b620">
+                                <ul>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Khuyến mãi</a></li>
+                                    <li><a href="#">Bảo hành và sữa chữa</a></li>
+                                    <li><a href="#">Tuyển dụng</a></li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li><a href="#">Check IMEI</a></li>
+                                    <li><a href="#">Phương thức thanh toán</a></li>
+                                    <li><a href="#">Gủi góp ý, khiếu nại</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-chinhsach-footer">
+                        <div class="element-chinhsach-footer">
+                            <div class="title-chinhsach-footer">
+                                <h2 class="title-sanpham-footer-1">Chính sách</h2>
+                            </div>
+                            <div class="element-87b620">
+                                <ul>
+                                    <li><a href="#">Trả góp</a></li>
+                                    <li><a href="#">Giao hàng</a></li>
+                                    <li><a href="#">Giao hàng (ZaloPay)</a></li>
+                                    <li><a href="#">Huỷ giao dịch</a></li>
+                                    <li><a href="#">Đổi trả</a></li>
+                                    <li><a href="#">Bảo hành</a></li>
+                                    <li><a href="#">Giải quyết khiếu nại</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-diachi-footer">
+                        <div class="element-diachi-footer">
+                            <div class="title-diachi-footer">
+                                <h2 class="title-sanpham-footer-1">Địa chỉ</h2>
+                            </div>
+                            <div class="element-87b620">
+                                <ul>
+                                    <li><a href="#">Tìm Store trên Google Map</a></li>
+                                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="element-lienhe-footer">
+                            <div class="title-lienhe-footer">
+                                <h2 class="title-sanpham-footer-1">Liên hệ</h2>
+                            </div>
+                            <div class="element-87b624">
+                                <p>
+                                    Mua hàng: <a href="#">0366764838</a>
+                                </p>
+                                <p>
+                                    Khiếu nại: <a href="#">0916409999</a>
+                                </p>
+                                <p>
+                                    Doanh nghiệp & đối tác: <a href="#">0916409999</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thiet-ke">
+                <div class="box">
+                    <p class="du-an">Performer: Nguyễn Văn Hiển</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.min.js"
+    integrity="sha512-NCiXRSV460cHD9ClGDrTbTaw0muWUBf/zB/yLzJavRsPNUl9ODkUVmUHsZtKu17XknhsGlmyVoJxLg/ZQQEeGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/Server/callApi.js"></script>
+<script src="./js/view/amount.js"></script>
+<script src="./js/model/validation.js"></script>
+<script src="./js/controller/cart.js"></script>
+
+</html>

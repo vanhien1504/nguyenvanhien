@@ -1,0 +1,799 @@
+body {
+    background: #F5F5F7;
+    ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+
+.container {
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+}
+/* load */
+.showload{
+    width: 10px;
+    margin: 0 auto;
+    padding-top: 300px;
+    text-align: center;
+}
+.loader {
+    border: 5px solid #d4d4d8;
+    border-radius: 50%;
+    border-top: 4px solid #000;
+    width: 30px;
+    height: 30px;
+    -webkit-animation: spin 3s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* end load */
+/* sua section list product */
+/* Sản phẩm */
+/* sửa img product */
+.tet {
+    display: flex;
+    justify-content: right;
+    padding: 5px 9px 0px 0px;
+    height: 43px;
+}
+
+.tet img {
+    transition: .5s;
+    width: 100px;
+
+}
+
+.fixed {
+    position: relative;
+}
+
+.nav {
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    background: #4B4B4B;
+}
+
+#container {
+    position: relative;
+}
+
+.nav-center {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box-nav {
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+
+}
+
+.logo-box-nav {
+    display: flex;
+    width: 13%;
+}
+
+.logo-box-nav a img {
+    max-width: 100%;
+    display: flex;
+    bottom: 0;
+}
+
+.muc-luc-nav {
+
+    display: flex;
+}
+
+.muc-luc-nav ul {
+    position: relative;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.muc-luc-nav ul li {
+    padding: 24px;
+    display: flex;
+    display: block;
+    transition: .3s;
+}
+
+.muc-luc-nav ul li:hover {
+    background: #404041;
+    color: #fff;
+}
+
+.muc-luc-nav ul li:hover a {
+    color: #Fff;
+}
+
+.muc-luc-nav ul li a {
+    text-decoration: none;
+    color: #D2D2D7;
+    font-size: 15px;
+}
+
+.muc-luc-nav ul ul {
+    z-index: 100;
+    padding: 0px;
+    margin: 17px;
+    list-style: none;
+    top: 49px;
+    left: 724px;
+    width: 230px;
+    background: #4B4B4B;
+    position: absolute;
+    display: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.muc-luc-nav>ul>li:hover>ul {
+    overflow: hidden;
+    display: block;
+}
+
+.muc-luc-nav>ul>ul>li:hover>a {
+    color: #fff;
+}
+
+.search-nav a,
+.gio-hang-nav a {
+    color: #D2D2D7;
+}
+
+.gio-hang {
+    position: relative;
+}
+
+.amount {
+    text-align: center;
+    height: 12px;
+    width: 10px;
+    font-size: 12px;
+    position: absolute;
+    background: #fff;
+    color: #0066CC;
+    border-radius: 10px;
+    padding: 3px;
+    margin-top: -8px;
+    margin-left: -3px;
+}
+
+.box-title {
+    padding-top: 66px;
+}
+
+.box-title-1 {
+    display: flex;
+    z-index: -1;
+    position: relative;
+    background: #F5F5F7;
+    height: 90px;
+}
+
+.title-iphone {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    justify-content: center;
+    bottom: 0;
+    font-size: 30px;
+    color: #000;
+}
+
+/* slide category */
+#intro-owl {
+
+    margin: 0 auto;
+
+}
+
+#intro-owl a img {
+    width: 100%;
+
+}
+
+.owl-stage-outer {
+    z-index: 0;
+}
+
+.owl-dots {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+
+.owl-dots .active span {
+    width: 30px !important;
+    height: 10px;
+    background: #0066CC !important;
+}
+
+.owl-item {
+
+    margin-right: 0px !important;
+}
+
+.danhmuc-sanpham {
+    display: flex;
+    flex-wrap: wrap;
+    --columssanpham: 4;
+    --spacing: 15px;
+    margin-left: calc(-1 * var(--spacing));
+}
+
+.box-element-sanpham-1 {
+    overflow: hidden;
+    transition: .3s;
+    background: #fff;
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0 0 5px;
+    width: calc(calc(100% / var(--columssanpham)) - var(--spacing));
+}
+
+.pictures {
+    text-align: center;
+    margin: 4px 0px 25px 0px;
+}
+
+.pictures img {
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    transition: .5s ease;
+}
+
+.box-element-sanpham-1:hover {
+    box-shadow: rgba(87, 87, 95, 0.2) 0 0 20px;
+}
+
+.box-element-sanpham-1:hover .img_tet {
+    transform: scale(1.1);
+}
+
+del span {
+    color: #86868B !important;
+}
+
+.price-amount,
+ins,
+.price-currency {
+    color: #0066CC;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.title-sanpham,
+.price-sanpham {
+    z-index: 2;
+    padding: 0px 0px 0px 25px;
+}
+
+.title-sanpham p {
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 32px;
+    word-break: break-all;
+    /* Chữ dài quá ta có thể tạo giới hạn cho nó */
+    display: -webkit-box;
+    /* giới hạn 3 cột */
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.price-sanpham {
+    margin-bottom: 20px;
+}
+
+.see-all-iphone {
+    text-align: center;
+}
+
+.box-element-sanpham-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.price-sanpham {
+    margin-top: auto;
+}
+
+.see-all-iphone button {
+    background: #fff;
+    border: 1px solid #0066CC;
+    border-radius: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+ins {
+    margin-left: 7px;
+}
+
+.see-all-iphone button {
+    transition: .5s ease;
+}
+
+.see-all-iphone button a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #0066CC;
+}
+
+.see-all-iphone button:hover {
+    background: #0066CC;
+}
+
+.see-all-iphone button:hover a {
+    color: #fff;
+}
+
+.see-all-iphone button a .mui-ten {
+    font-weight: 600;
+    position: absolute;
+    margin-top: 0.7px;
+    margin-left: 5px;
+}
+
+.title-search-ul {
+    height: 70px;
+    padding: 0;
+    list-style: none;
+}
+
+.title-search-li {
+    line-height: 70px;
+    display: inline-block;
+
+
+}
+
+.title-search-li a {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #4b4b4a;
+    padding-right: 30px;
+    text-decoration: none;
+
+}
+
+.about-used-iphone {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-iphone-appropriate {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    --spacingColumn: 20px;
+    --Column: 2;
+    margin-left: calc(-1 * var(--spacingColumn));
+}
+
+.box-khung-001 {
+    padding: 20px 0px;
+    border-radius: 20px;
+    transition: .7s ease;
+    align-items: center;
+    align-content: center;
+    overflow: hidden;
+    display: flex;
+    background: #fff;
+    margin-bottom: var(--spacingColumn);
+    margin-left: var(--spacingColumn);
+    width: calc(calc(100% / var(--Column)) - var(--spacingColumn));
+}
+
+.box-khung-001:hover {
+
+    box-shadow: 0 0 7px grey;
+}
+
+.box_img_about {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+
+}
+
+.img-search-001 {
+
+    width: 50%;
+    height: 60%;
+}
+
+.thong-tin-search {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+
+}
+.thong-tin-search p{
+    margin: 0;
+}
+h3 {
+    margin: 10px 0px;
+    font-size: 25px;
+}
+
+.so-sanh {
+    display: flex;
+    text-decoration: none;
+}
+
+.so-sanh p {
+    color: #0066CC;
+}
+
+.story-about-iphone {
+    background: #fff;
+}
+
+.box-story {
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 40px;
+}
+
+.box-story p {
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 30px;
+    color: #515154;
+}
+
+.box-story ul li {
+    font-weight: 400;
+    letter-spacing: .5px;
+    line-height: 30px;
+    color: #515154;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+/* menu__iphone */
+.title-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search-iphone {
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    outline: none;
+    padding: 7px;
+    width: 220px;
+}
+
+#search-submid {
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #515154;
+    padding: 7px;
+    border-radius: 5px;
+    transition: .5s ease;
+    font-weight: 600;
+}
+
+#search-submid:hover {
+    background: #0066CC;
+    color: #fff;
+}
+
+/* send feadback */
+.subscribe-tu-shopUcha {
+    padding: 50px 0px;
+    background: #F2F2F2;
+    ;
+}
+
+.box-container-subscribe {
+    margin: 0px auto;
+    max-width: 1200px;
+    min-height: 252px;
+    display: flex;
+    align-items: center;
+}
+
+.box-subscribe-tu-shopUcha {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-top-shopUcha {
+    text-align: center;
+    width: 100%;
+}
+
+.subscribe-top-shopUcha h2 {
+    margin-top: 0px;
+}
+
+.subscribe-bottom-shopUcha {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+}
+
+.subscribe-bottom-shopUcha .nhap-thong-tin {
+    height: 20px;
+    width: 532px;
+    outline: none;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+}
+
+.subscribe-bottom-shopUcha .dang-ky {
+    height: 40px;
+    width: 176px;
+    border-radius: 50px;
+    padding: 10px;
+    border: none;
+    background: #0066CC;
+}
+
+.subscribe-bottom-shopUcha .dang-ky span {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/* footer */
+
+/* footer */
+.footer {
+    padding-top: 50px;
+    background: #1D1D1F;
+    color: #fff;
+}
+
+.gioi-han-rong-footer {
+    margin-left: 157px;
+    margin-right: 157px;
+}
+
+.box-container-footer {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex-footer-box {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #4B4B4B;
+    margin-bottom: 30px;
+    display: flex;
+    width: 100%;
+}
+
+.pr-thuong-hieu-footer {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.logo-shopUcha {
+    width: 100%;
+}
+
+.revews-shopUcha {}
+
+.revews-shopUcha p {
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    width: 304px;
+    color: #D2D2D7;
+}
+
+.logo-thongtin-ve-thuongmai {
+    position: relative;
+    width: 100%;
+    display: flex;
+    list-style: none;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-thongtin-ve-thuongmai li {
+    position: relative;
+    margin-right: 14px;
+}
+
+.fa-brands {
+    transform: translate(-32px, 17px);
+    position: absolute;
+}
+
+.fa-facebook-f {
+    color: #0066CC;
+}
+
+.fa-youtube {
+    color: red;
+}
+
+.fa-mandalorian {
+    color: rgb(0, 166, 255);
+}
+
+.box-sanpham-footer {
+    width: 13%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-thongtin-footer {
+    width: 26%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-chinhsach-footer {
+    width: 19%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-diachi-footer {
+    width: 23.096%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.element-sanpham-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 61px;
+}
+
+.box-san123 {
+    display: flex;
+    flex-direction: column;
+}
+
+.element-thongtin-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 132px;
+}
+
+.element-chinhsach-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.element-diachi-footer,
+.element-lienhe-footer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 83px;
+}
+
+.element-87b620 {
+    display: flex;
+    width: 100%;
+}
+
+.element-87b620 ul {
+    padding: 0;
+    list-style: none;
+}
+
+.element-87b620 ul li {
+    margin-bottom: 10px;
+}
+
+.element-87b620 ul li a {
+    position: relative;
+    padding-bottom: 2px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #86868B;
+}
+
+.element-87b620 ul li a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #878793;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.4s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.element-87b620 ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+.element-87b624 p {
+    color: #86868B;
+    font-size: 13px;
+}
+
+.element-87b624 p a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #0066CC;
+}
+
+.title-sanpham-footer-1 {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.thiet-ke {
+    padding-bottom: 30px;
+}
+
+.du-an {
+    margin: 0;
+    color: #86868B;
+}

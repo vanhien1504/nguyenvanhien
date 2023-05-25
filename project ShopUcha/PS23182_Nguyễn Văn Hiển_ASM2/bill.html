@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đơn hàng</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bill.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="nav-center">
+            <div class="box-nav">
+                <div class="logo-box-nav">
+                    <a href="./index.html"><img src="./img/Mask group (2).png" alt=""></a>
+                </div>
+                <div class="muc-luc-nav">
+                    <ul>
+                        <li><a href="./category.html">iPhone</a></li>
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">Apple Watch</a></li>
+                        <li><a href="#">Âm thanh</a></li>
+                        <li><a href="#">Phụ Kiện</a></li>
+                        <li><a href="#">Flash sale</a></li>
+                        <li><a href="#">Thông tin</a>
+                            <ul>
+                                <li><a href="../view/lienhe.php">Liên hệ</a></li>
+                                <li><a href="../view/gioithieu.php">Giới thiệu</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-nav">
+                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                </div>
+                <div class="search-nav">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <div class="gio-hang-nav gio-hang">
+                    <a href="./cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                    <span class="amount">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box-title">
+            <div class="bill_user">
+                <h2>Chi tiết đơn hàng</h2>
+                <div class="box_ouput_information" id="renDerUser">
+                    <!-- <div class="box_infomation">
+                        <p>Mã đơn hàng:</p>
+                        <span><b>#2049</b></span>
+                    </div>
+                    <div class="box_infomation">
+                        <p>Ngày đặt hàng:</p>
+                        <span><b>31/01/2023</b></span>
+                    </div>
+                    <div class="box_infomation">
+                        <p>Tình trạng:</p>
+                        <span><b class="status_bill">Đang tiếp nhận xử lý</b></span>
+                    </div>
+                    <div class="box_infomation">
+                        <p>Tên khách hàng:</p>
+                        <span><b>Dũng</b></span>
+                    </div>
+                    <div class="box_infomation">
+                        <p>Số điện thoại:</p>
+                        <span><b>0366764838</b></span>
+                    </div>
+                    <div class="box_infomation">
+                        <p>Email:</p>
+                        <span><b>dungnguyen.dev@gmail.com</b></span>
+                    </div> -->
+                </div>
+                <div class="box_payment_methods">
+                    <div class="box_pay_methods">
+                        <p>Phương thức thanh toán:</p>
+                        <span><b>Chuyển khoản ngân hàng</b></span>
+                    </div>
+                    <div class="box_pay_methods">
+                        <p>Tình trạng thanh toán:</p>
+                        <span class="status_bill"><b>Đang chờ thanh toán</b></span>
+                    </div>
+                </div>
+                <p>Sản phẩm</p>
+                <div class="box_buy_product" id="renderBillItem">
+                    <!-- <h4>iPhone 14 Pro Max 128GB</h4>
+                    <div class="group_1">
+                        <div class="box_buy_prod">
+                            <p>Khu vực: Khu vực miền Bắc</p>
+                            <p>Hình thức: Mua thẳng</p>
+                            <p>Màu sắc: Sliver</p>
+                        </div>
+                        <div class="box_buy_prod">
+                            <span><b>SL:1</b></span>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="box_sum_price_bill box_sum_1" >
+                    <p>Tổng số tiền đã đặt hàng:</p>
+                    <span><b class="sumPrice" id="renDerSum"></b></span>
+                </div>
+                <p class="cmt_1"><a href="#">Nhấp vào đây để biết chi tiết hơn đơn hàng</a></p>
+                <div class="box_btn_bill">
+                    <button><a class="btn_buy_item" href="./index.html">Tiếp tục mua hàng</a></button>
+                    <button onclick="deleteUserAndItem()">Đang tiếp nhận xử lý</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="subscribe-tu-shopUcha">
+        <div class="box-container-subscribe">
+            <div class="box-subscribe-tu-shopUcha">
+                <div class="subscribe-top-shopUcha">
+                    <h2>Đăng ký nhận từ shopUcha</h2>
+                    <p>Thông tin sản phẩm mới nhất và chương trình khuyến mãi</p>
+                </div>
+                <div class="subscribe-bottom-shopUcha">
+                    <form action="">
+                        <input class="nhap-thong-tin" type="text" placeholder="Email của bạn">
+                        <button type="submit" class="dang-ky"><span>Đăng ký</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="gioi-han-rong-footer">
+            <div class="box-container-footer">
+                <div class="flex-footer-box">
+                    <div class="pr-thuong-hieu-footer">
+                        <div class="logo-shopUcha">
+                            <img src="./img/7600848499_0f8b365e-ac63-41cb-9653-0e62ef28d5b3.png" alt="">
+                        </div>
+                        <div class="revews-shopUcha">
+                            <p>Năm 2020, ShopUcha trở thành đại lý ủy quyền của Apple. Chúng tôi phát triển chuỗi cửa
+                                hàng
+                                tiêu chuẩn và Apple Mono Store nhằm mang đến trải nghiệm tốt nhất về sản phẩm và dịch vụ
+                                của
+                                Apple cho người dùng Việt Nam.</p>
+                        </div>
+                        <ul class="logo-thongtin-ve-thuongmai">
+                            <li><a href="#"><svg width="50" height="50" fill="none">
+                                        <circle cx="25" cy="25" r="24" stroke="#515154" stroke-width="2"></circle>
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </svg></a></li>
+                            <li><a href="#"><svg width="50" height="50" fill="none">
+                                        <circle cx="25" cy="25" r="24" stroke="#515154" stroke-width="2"></circle>
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </svg></a></li>
+                            <li><a href="#"><svg width="50" height="50" fill="none">
+                                        <circle cx="25" cy="25" r="24" stroke="#515154" stroke-width="2"></circle>
+                                        <i class="fa-brands fa-mandalorian"></i>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                    <div class="box-sanpham-footer">
+                        <div class="element-sanpham-footer">
+                            <div class="box-san123">
+                                <div class="title-sanham-footer">
+                                    <h2 class="title-sanpham-footer-1">Sản phẩm</h2>
+                                </div>
+                                <div class="element-87b620">
+                                    <ul>
+                                        <li><a href="#">iPhone</a></li>
+                                        <li><a href="#">iPad</a></li>
+                                        <li><a href="#">Mac</a></li>
+                                        <li><a href="#">Apple Watch</a></li>
+                                        <li><a href="#">Âm thanh</a></li>
+                                        <li><a href="#">Phụ kiện</a></li>
+                                        <li><a href="#">Dịch vụ</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-thongtin-footer">
+                        <div class="element-thongtin-footer">
+                            <div class="title-thongtin-footer">
+                                <h2 class="title-sanpham-footer-1">Thông tin</h2>
+                            </div>
+                            <div class="element-87b620">
+                                <ul>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                    <li><a href="#">Khuyến mãi</a></li>
+                                    <li><a href="#">Bảo hành và sữa chữa</a></li>
+                                    <li><a href="#">Tuyển dụng</a></li>
+                                    <li><a href="#">Tin tức</a></li>
+                                    <li><a href="#">Check IMEI</a></li>
+                                    <li><a href="#">Phương thức thanh toán</a></li>
+                                    <li><a href="#">Gủi góp ý, khiếu nại</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-chinhsach-footer">
+                        <div class="element-chinhsach-footer">
+                            <div class="title-chinhsach-footer">
+                                <h2 class="title-sanpham-footer-1">Chính sách</h2>
+                            </div>
+                            <div class="element-87b620">
+                                <ul>
+                                    <li><a href="#">Trả góp</a></li>
+                                    <li><a href="#">Giao hàng</a></li>
+                                    <li><a href="#">Giao hàng (ZaloPay)</a></li>
+                                    <li><a href="#">Huỷ giao dịch</a></li>
+                                    <li><a href="#">Đổi trả</a></li>
+                                    <li><a href="#">Bảo hành</a></li>
+                                    <li><a href="#">Giải quyết khiếu nại</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-diachi-footer">
+                        <div class="element-diachi-footer">
+                            <div class="title-diachi-footer">
+                                <h2 class="title-sanpham-footer-1">Địa chỉ</h2>
+                            </div>
+                            <div class="element-87b620">
+                                <ul>
+                                    <li><a href="#">Tìm Store trên Google Map</a></li>
+                                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="element-lienhe-footer">
+                            <div class="title-lienhe-footer">
+                                <h2 class="title-sanpham-footer-1">Liên hệ</h2>
+                            </div>
+                            <div class="element-87b624">
+                                <p>
+                                    Mua hàng: <a href="#">0962620070</a>
+                                </p>
+                                <p>
+                                    Khiếu nại: <a href="#">0953487564</a>
+                                </p>
+                                <p>
+                                    Doanh nghiệp & đối tác: <a href="#">0381182331</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thiet-ke">
+                <div class="box">
+                    <p class="du-an">Performer: Nguyễn Văn Hiển</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.min.js"
+    integrity="sha512-NCiXRSV460cHD9ClGDrTbTaw0muWUBf/zB/yLzJavRsPNUl9ODkUVmUHsZtKu17XknhsGlmyVoJxLg/ZQQEeGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/Server/callApi.js"></script>
+<script src="./js/controller/bill.js"></script>
+</html>

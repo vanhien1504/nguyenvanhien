@@ -1,0 +1,468 @@
+{
+    "menu": [
+        {
+            "id": "1",
+            "role": 0,
+            "nameTile": "iPhone",
+            "link": "./category.html"
+        },
+        {
+            "id": "2",
+            "role": 0,
+            "nameTile": "iPad",
+            "link": "#"
+        },
+        {
+            "id": "3",
+            "role": 0,
+            "nameTile": "Mac",
+            "link": "#"
+        },
+        {
+            "id": "4",
+            "role": 0,
+            "nameTile": "Apple Watch",
+            "link": "#"
+        },
+        {
+            "id": "5",
+            "role": 0,
+            "nameTile": "Âm thanh",
+            "link": "#"
+        },
+        {
+            "id": "6",
+            "role": 0,
+            "nameTile": "Phụ Kiện",
+            "link": "#"
+        },
+        {
+            "id": "7",
+            "role": 0,
+            "": 0,
+            "nameTile": "Flash sale",
+            "link": "#"
+        },
+        {
+            "id": "8",
+            "role": 0,
+            "nameTile": "Thông tin",
+            "menuNav": [
+                {
+                    "id": "1",
+                    "nameTile": "Liện hệ",
+                    "link": "#"
+                },
+                {
+                    "id": "2",
+                    "nameTile": "Giới thiệu",
+                    "link": "#"
+                }
+            ],
+            "link": "#"
+        }
+    ],
+    "banner": [
+        {
+            "id": 1,
+            "img": "0011110_2023333m.jpeg",
+            "role": 1
+        },
+        {
+            "id": 2,
+            "img": "0011478_Banner PC (27).png",
+            "role": 1
+        },
+        {
+            "id": 3,
+            "img": "0011477_banne PC watch Tết.jpeg",
+            "role": 1
+        },
+        {
+            "id": 4,
+            "img": "0011106_banner PC ipad gen 9 (1).jpeg",
+            "role": 1
+        },
+        {
+            "id": 5,
+            "img": "Screenshot 2022-06-23 082549.png",
+            "role": 1
+        }
+    ],
+    "products": [
+        {
+            "id": "1",
+            "category": 1,
+            "iconTet": "tet-2023.png",
+            "img": "0007808_iphone-14-pro-max-128gb_415.png",
+            "priceDel": 0,
+            "priceIns": 34490999,
+            "name": "iPhone 14 Pro Max 128GB",
+            "role": 1,
+            "brand": "iPhone"
+        },
+        {
+            "id": "2",
+            "category": 1,
+            "iconTet": "tet-2023.png",
+            "img": "0008734_iphone-14-pro-128gb_415.png",
+            "priceDel": 0,
+            "priceIns": 30290000,
+            "name": "iPhone 14 Pro 128GB",
+            "role": 1,
+            "brand": "iPhone"
+        },
+        {
+            "id": "3",
+            "category": 1,
+            "iconTet": "tet-2023.png",
+            "img": "0009181_iphone-14-128gb_415.png",
+            "priceDel": 0,
+            "priceIns": 27290000,
+            "name": "iPhone 14 128GB",
+            "role": 1,
+            "brand": "iPhone"
+        },
+        {
+            "id": "4",
+            "category": 1,
+            "iconTet": "tet-2023.png",
+            "img": "0009495_iphone-14-plus-128gb_415.png",
+            "priceDel": 0,
+            "priceIns": 23290000,
+            "name": "iPhone 14 Plus 128GB",
+            "role": 1,
+            "brand": "iPhone"
+        },
+        {
+            "id": "5",
+            "category": 1,
+            "iconTet": "",
+            "img": "0000596_iphone-13_415.png",
+            "priceDel": 24990000,
+            "priceIns": 17950000,
+            "name": "iPhone 13",
+            "role": 1,
+            "brand": "iPhone"
+        },
+        {
+            "id": "6",
+            "category": 1,
+            "iconTet": "tet-2023.png",
+            "img": "0000597_iphone-13-mini_415.png",
+            "priceDel": 21990000,
+            "priceIns": 16990000,
+            "name": "iPhone 13 mini",
+            "role": 1,
+            "brand": "iPhone"
+        },
+        {
+            "id": "7",
+            "category": 1,
+            "iconTet": "",
+            "img": "0000600_iphone-se-2022_415.png",
+            "priceDel": 12990000,
+            "priceIns": 9990000,
+            "name": "iPhone SE (2022)",
+            "role": 1,
+            "brand": "iPhone"
+        },
+        {
+            "id": "8",
+            "category": 1,
+            "iconTet": "",
+            "img": "0006794_iphone-12-64gb_415.png",
+            "priceDel": 22990000,
+            "priceIns": 15990000,
+            "name": "iPhone 12 64GB",
+            "role": 1,
+            "brand": "iPhone"
+        },
+        {
+            "id": "9",
+            "category": 1,
+            "iconTet": "",
+            "img": "0006849_iphone-12-128gb_415.png",
+            "priceDel": 24490000,
+            "priceIns": 17450000,
+            "name": "iPhone 12 128GB",
+            "role": 1,
+            "brand": "iPhone"
+        },
+        {
+            "id": "10",
+            "category": 2,
+            "iconTet": "0",
+            "img": "ipad-air-5.png",
+            "priceDel": 0,
+            "priceIns": 15290000,
+            "name": "iPad Air 5",
+            "role": 1,
+            "brand": "iPad"
+        },
+        {
+            "id": "11",
+            "category": 2,
+            "iconTet": "tet-2023.png",
+            "img": "ipad-gen-9.png",
+            "priceDel": 0,
+            "priceIns": 8590000,
+            "name": "iPad gen 9",
+            "role": 1,
+            "brand": "iPad"
+        },
+        {
+            "id": "12",
+            "category": 2,
+            "iconTet": "tet-2023.png",
+            "img": "ipad-pro-m1-11-768x768-1.png",
+            "priceDel": 0,
+            "priceIns": 19690000,
+            "name": "iPad Pro 11 inch (M1, 2021)",
+            "role": 1,
+            "brand": "iPad"
+        },
+        {
+            "id": "13",
+            "category": 2,
+            "iconTet": "tet-2023.png",
+            "img": "ipad-mini-6.png",
+            "priceDel": 0,
+            "priceIns": 13290000,
+            "name": "iPad mini 6 (2021)",
+            "role": 1,
+            "brand": "iPad"
+        },
+        {
+            "id": "14",
+            "category": 2,
+            "iconTet": "tet-2023.png",
+            "img": "ipad-mini-6.png",
+            "priceDel": 0,
+            "priceIns": 13290000,
+            "name": "iPad mini 6 (2021)",
+            "role": 0,
+            "brand": "iPad"
+        },
+        {
+            "id": "15",
+            "category": 3,
+            "iconTet": "tet-2023.png",
+            "img": "mac-m2-1.png",
+            "priceDel": 0,
+            "priceIns": 31990000,
+            "name": "MacBook Pro 13 M2 2022",
+            "role": 1,
+            "brand": "MacBook"
+        },
+        {
+            "id": "16",
+            "category": 3,
+            "iconTet":"",
+            "img": "MacBook_Air_M1_Silver-1-1.png",
+            "priceDel": 0,
+            "priceIns": 29990000,
+            "name": "MacBook Air M2 2022",
+            "role": 1,
+            "brand": "MacBook"
+        },
+        {
+            "id": "17",
+            "category": 3,
+            "iconTet":"",
+            "img": "MacBook-Pro-M1-2020.png",
+            "priceDel": 0,
+            "priceIns": 29590000,
+            "name": "MacBook Pro M1 2020",
+            "role": 1,
+            "brand": "MacBook"
+        },
+        {
+            "id": "18",
+            "category": 3,
+            "iconTet":"",
+            "img": "MacBook-Pro-M1-2020.png",
+            "priceDel": 0,
+            "priceIns": 22990000,
+            "name": "MacBook Air M1 2020",
+            "role": 1,
+            "brand": "MacBook"
+        },
+        {
+            "id": "19",
+            "category": 4,
+            "iconTet":"",
+            "img": "airpods_pro_2021.png",
+            "priceDel": 4390000,
+            "priceIns": 2690000,
+            "name": "AirPods 2",
+            "role": 1,
+            "brand": "AirPods"
+        },
+        {
+            "id": "20",
+            "category": 4,
+            "iconTet":"",
+            "img": "AirPods_3rd_Gen_PDP_Image_Position-2__VN-removebg-preview.png",
+            "priceDel": 5490000,
+            "priceIns": 4450000,
+            "name": "AriPods(gen 3)",
+            "role": 1,
+            "brand": "AirPods"
+        },
+        {
+            "id": "21",
+            "category": 4,
+            "iconTet":"",
+            "img": "AirPods-Max-1.png",
+            "priceDel": 5490000,
+            "priceIns": 10490000,
+            "name": "AirPods Max",
+            "role": 1,
+            "brand": "AirPods"
+        },
+        {
+            "id": "22",
+            "category": 4,
+            "iconTet":"",
+            "img": "airpods_pro_2021.png",
+            "priceDel": 5790000,
+            "priceIns": 4590000,
+            "name": "AirPods Pro (2021)",
+            "role": 1,
+            "brand": "AirPods"
+        },
+        {
+            "id": "23",
+            "category": 5,
+            "iconTet":"",
+            "img": "watch-7-thep-1.png",
+            "priceDel": 0,
+            "priceIns": 17990000,
+            "name": "Apple Watch Series 7 Thép",
+            "role": 1,
+            "brand": "Watch"
+        },
+        {
+            "id": "24",
+            "category": 5,
+            "iconTet":"",
+            "img": "watch7.png",
+            "priceDel": "0",
+            "priceIns": "9.590.000",
+            "name": "Apple Watch Series 7 Nhôm",
+            "role": 1,
+            "brand": "Watch"
+        },
+        {
+            "id": "25",
+            "category": 5,
+            "iconTet":"",
+            "img": "watch-6-thep-1.png",
+            "priceDel": 0,
+            "priceIns": 14990000,
+            "name": "Apple Watch Series 6 Thép",
+            "role": 1,
+            "brand": "Watch"
+        },
+        {
+            "id": "26",
+            "category": 5,
+            "iconTet":"",
+            "img": "watch-6-1.png",
+            "priceDel": 0,
+            "priceIns": 7490000,
+            "name": "Apple Watch Series 6 Nhôm",
+            "role": 1,
+            "brand": "Watch"
+        },
+        {
+            "id": "27",
+            "category": 6,
+            "iconTet":"",
+            "img": "MHLQ3-600x600-1.png",
+            "priceDel": 0,
+            "priceIns": 1490000,
+            "name": "Ví da iPhone Leather Wallet with MagSafe",
+            "role": 1,
+            "brand": "Phụ kiện chính hãng"
+        },
+        {
+            "id": "28",
+            "category": 6,
+            "iconTet":"",
+            "img": "MHXH3_AV4_GEO_US.png",
+            "priceDel": 1990000,
+            "priceIns": 1290000,
+            "name": "Sạc MagSafe charger",
+            "role": 1,
+            "brand": "Phụ kiện chính hãng"
+        },
+        {
+            "id": "29",
+            "category": 6,
+            "iconTet":"",
+            "img": "củ111.png",
+            "priceDel": 690000,
+            "priceIns": 520000,
+            "name": "Sạc 20W USB-C Power Adapter",
+            "role": 1,
+            "brand": "Phụ kiện chính hãng"
+        },
+        {
+            "id": "30",
+            "category": 6,
+            "iconTet":"",
+            "img": "1-12-e1625197512628.png",
+            "priceDel": 0,
+            "priceIns": 1430000,
+            "name": "Ốp lưng iPhone 12|12 Pro Clear Case with MagSafe MHLM3ZA/A",
+            "role": 1,
+            "brand": "Phụ kiện chính hãng"
+        },
+        {
+            "id": "31",
+            "category": 7,
+            "iconTet":"",
+            "img": "apple-care.png",
+            "priceDel": 0,
+            "priceIns": 690000,
+            "name": "Apple Care",
+            "role": 1,
+            "brand": "Dịch vụ"
+        },
+        {
+            "id": "32",
+            "category": 7,
+            "iconTet":"",
+            "img": "BHKC-02-1-1536x1536.png",
+            "priceDel": 0,
+            "priceIns": 199000,
+            "name": "Bảo hành kim cương",
+            "role": 1,
+            "brand": "Dịch vụ"
+        },
+        {
+            "id": "33",
+            "category": 7,
+            "iconTet":"",
+            "img": "Microsoft-Office-1.png",
+            "priceDel": 0,
+            "priceIns": 590000,
+            "name": "Office 365",
+            "role": 1,
+            "brand": "Dịch vụ"
+        },
+        {
+            "id": "34",
+            "category": 7,
+            "iconTet":"",
+            "img": "Apple-school-manager-1.png",
+            "priceDel": 0,
+            "priceIns": 300000,
+            "name": "Apple School Manager",
+            "role": 1,
+            "brand": "Dịch vụ"
+        }
+    ]
+}

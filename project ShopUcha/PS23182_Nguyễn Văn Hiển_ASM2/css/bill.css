@@ -1,0 +1,95 @@
+.bill_user h2 {
+    text-align: center;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
+p {
+    margin: 10px 0;
+    color: rgb(137, 136, 136);
+    
+}
+.cmt_1{
+    text-align: center;
+}
+p a{
+    text-decoration: none;
+    color: #0066cc;
+    font-size: 14px;
+}
+p a:hover{
+    text-decoration: underline;
+}
+.bill_user {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.box_ouput_information {
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.box_infomation,
+.box_pay_methods,.group_1 ,.box_sum_price_bill {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box_infomation p,
+.box_pay_methods p {
+    margin: 10px 0px;
+    color: rgb(137, 136, 136);
+}
+
+.status_bill {
+    color: #339901;
+}
+.box_payment_methods {
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.box_buy_product {
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(230, 230, 230);
+}
+.box_buy_product h4{
+    margin-bottom: 5px;
+}
+.box_sum_1{
+    padding: 10px;
+}
+.sumPrice{
+    color: #0066cc;
+    font-size: 20px;
+}
+.box_btn_bill{
+    padding: 20px 0px;
+    width: 100%;
+}
+button,.btn_buy_item{
+    text-decoration: none;
+    font-size: 15px;
+    width: 49%;
+    color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background: #0066cc;
+}
+button:nth-child(2){
+    background: #FEB700;
+}

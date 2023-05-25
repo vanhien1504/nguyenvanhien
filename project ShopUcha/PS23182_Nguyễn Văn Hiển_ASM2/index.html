@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopUcha</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owlcarousel -->
+
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarousel/assets/owl.theme.default.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+
+    <div class="container" id="setTimeOut">
+        <div class="nav">
+            <div class="nav-center">
+                <div class="box-nav">
+                    <div class="logo-box-nav">
+                        <a href="./index.html"><img src="./img/Mask group (2).png" alt=""></a>
+                    </div>
+                    <div class="muc-luc-nav">
+                        <ul id="loadMenu">
+                            <!-- <li><a href="./category.html">iPhone</a></li>
+                            <li><a href="#">iPad</a></li>
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">Apple Watch</a></li>
+                            <li><a href="#">Âm thanh</a></li>
+                            <li><a href="#">Phụ Kiện</a></li>
+                            <li><a href="#">Flash sale</a></li>
+                            <li><a href="#">Thông tin</a>
+                                <ul>
+                                    <li><a href="#">Liên hệ</a></li>
+                                    <li><a href="#">Giới thiệu</a></li>
+                                </ul>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="search-nav">
+                        <a href="#"><i class="fa-regular fa-user"></i></a>
+                    </div>
+                    <div class="search-nav">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </div>
+                    <div class="gio-hang-nav gio-hang">
+                        <a href="./cart.html"> <i class="fa-solid fa-cart-shopping"></i></a>
+                        <span class="amount" id="amount"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="intro-owl">
+            <div class="owl-carousel owl-theme" id="loadBanner">
+                <a href="#"><img src="./image-mua-tet/0011110_2023333m.jpeg" alt=""></a>
+                <a href="#"><img src="./image-mua-tet/0011478_Banner PC (27).png" alt=""></a>
+                <a href="#"><img src="./image-mua-tet/0011477_banne PC watch Tết.jpeg" alt="" class="imamge-mua-he"></a>
+                <a href="#"><img src="./image-mua-tet/0011106_banner PC ipad gen 9 (1).jpeg" alt=""></a>
+                <a href="#"><img src="./image-mua-tet/Screenshot 2022-06-23 082549.png" alt=""></a>
+            </div>
+        </div>
+        <div class="element-container">
+            <div class="quang-cao-element">
+                <div class="box-element">
+                    <div class="box-element-1"><a href="#"><img src="./img/product_tet/Artboard 43 copy.png" alt=""></a>
+                    </div>
+                    <div class="box-element-1"><a href="#"><img src="./img/product_tet/bonusaa.png" alt=""></a></div>
+                    <div class="box-element-1"><a href="#"><img src="./img/product_tet/Care-MB_1000.jpeg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="element-sanpham">
+                <div class="box-container">
+                    <div class="title">
+                        <h2 class="stars__iphone">iPhone</h2>
+                    </div>
+                    <div class="danhmuc-sanpham" id="loaderProductIP">
+                        <!-- <div class="box-element-sanpham-1">
+                            <div class="tet"><img class="img_tet" src="./img/product_tet/tet-2023.png" alt=""></div>
+                            <div class="pictures"><a href="./detail.html"><img src="./img/product_tet/0007808_iphone-14-pro-max-128gb_415.png" alt=""></a></div>
+                            <div class="title-sanpham">
+                                <p>iPhone 14 Pro Max 128GB</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">Giá từ: 34.490.999</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="tet"><img class="img_tet" src="./img/product_tet/tet-2023.png" alt=""></div>
+                            <div class="pictures"><a href="./detail.html"><img src="./img/product_tet/0008734_iphone-14-pro-128gb_415.png" alt=""></a></div>
+                            <div class="title-sanpham">
+                                <p>iPhone 14 Pro 128GB</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">Giá từ: 30.290.000</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="tet"><img class="img_tet" src="./img/product_tet/tet-2023.png" alt=""></div>
+                            <div class="pictures"><img src="./img/product_tet/0009181_iphone-14-128gb_415.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>iPhone 14 128GB</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">Giá từ: 27.290.000</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="tet"><img class="img_tet" src="./img/product_tet/tet-2023.png" alt=""></div>
+                            <div class="pictures"><img src="./img/product_tet/0009495_iphone-14-plus-128gb_415.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>iPhone 14 Plus 128GB</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">Giá từ: 23.290.000</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="see-all-iphone">
+                        <button><a href="#">Xem tất cả iPhone <span class="mui-ten">></span></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="element-sanpham">
+                <div class="box-container">
+                    <div class="title">
+                        <h2>iPad</h2>
+                    </div>
+                    <div class="danhmuc-sanpham" id="loaderiPpad">
+                        <!-- <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/ipad-air-5.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>iPad Air 5</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">Giá từ: 15.290.000</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/ipad-gen-9.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>iPad gen 9</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">Giá từ: 8.590.000</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/ipad-mini-6.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>iPad mini 6 (2021)</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">13.290.000</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/ipad-pro-m1-11-768x768-1.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>iPad Pro 11 inch (M1, 2021)</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">Giá từ: 19.690.000</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="see-all-iphone">
+                        <button><a href="#">Xem tất cả iPad <span class="mui-ten">></span></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="element-sanpham">
+                <div class="box-container">
+                    <div class="title">
+                        <h2>Mac</h2>
+                    </div>
+                    <div class="danhmuc-sanpham" id="loaderMac">
+                        <!-- <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/mac-m2-1.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>MacBook Pro 13 M2 2022</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">Giá từ: 31.990.000</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/MacBook_Air_M1_Silver-1-1.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>MacBook Air M2 2022</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">Giá từ 29.990.000</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/MacBook-Pro-M1-2020.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>MacBook Pro M1 2020</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">Giá từ: 29.590.000</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/MacBook-Air-M1-2020.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>MacBook Air M1 2020</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">Giá từ: 22.990.000</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="see-all-iphone">
+                        <button><a href="#">Xem tất cả Mac <span class="mui-ten">></span></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="element-sanpham">
+                <div class="box-container">
+                    <div class="title">
+                        <h2>AirPods</h2>
+                    </div>
+                    <div class="danhmuc-sanpham" id="loaderAirPods">
+                        <!-- <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/airpods_pro_2021.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>AirPods 2</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <del>
+                                    <span class="price-amount">4.390.000</span> <span class="price-currency">₫</span>
+                                </del>
+                                <ins>
+                                    <span class="price-amount">2.690.000</span> <span class="price-currency">₫</span>
+                                </ins>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img
+                                    src="./img/AirPods_3rd_Gen_PDP_Image_Position-2__VN-removebg-preview.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>AriPods(gen 3)</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <del>
+                                    <span class="price-amount">5.490.000</span> <span class="price-currency">₫</span>
+                                </del>
+                                <ins>
+                                    <span class="price-amount">4.450.000</span> <span class="price-currency">₫</span>
+                                </ins>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/AirPods-Max-1.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>AirPods Max</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">10.490.000</span> <span class="price-currency">₫</span>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/airpods_pro_2021.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>AirPods Pro (2021)</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <del>
+                                    <span class="price-amount">5.790.000</span> <span class="price-currency">₫</span>
+                                </del>
+                                <ins>
+                                    <span class="price-amount">4.590.000</span> <span class="price-currency">₫</span>
+                                </ins>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="see-all-iphone">
+                        <button><a href="#">Xem tất cả iPhone <span class="mui-ten">></span></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="element-sanpham">
+                <div class="box-container">
+                    <div class="title">
+                        <h2>Watch</h2>
+                    </div>
+                    <div class="danhmuc-sanpham" id="loaderAppleW">
+                        <!-- <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/watch-7-thep-1.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>Apple Watch Series 7 Thép</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">17.990.000</span> <span class="price-currency">₫</span></p>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/watch7.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>Apple Watch Series 7 Nhôm</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">9.590.000</span> <span class="price-currency">₫</span></p>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/watch-6-thep-1.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>Apple Watch Series 6 Thép</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">14.990.000</span> <span class="price-currency">₫</span></p>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/watch-6-1.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>Apple Watch Series 6 Nhôm</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <span class="price-amount">7.490.000</span> <span class="price-currency">₫</span></p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="see-all-iphone">
+                        <button><a href="#">Xem tất cả Watch<span class="mui-ten"> ></span></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="element-sanpham">
+                <div class="box-container">
+                    <div class="title">
+                        <h2>Phụ kiện chích hãng</h2>
+                    </div>
+                    <div class="danhmuc-sanpham" id="loaderPhuKien">
+                        <!-- <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/MHLQ3-600x600-1.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>Ví da iPhone Leather Wallet with MagSafe</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <del>
+    
+                                </del>
+                                <ins>
+                                    <span class="price-amount">1.490.000</span><span class="price-currency">₫</span>
+                                </ins>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/MHXH3_AV4_GEO_US.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>Sạc MagSafe charger</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <del>
+                                    <span class="price-amount">1.990.000</span><span class="price-currency">₫</span>
+                                </del>
+                                <ins>
+                                    <span class="price-amount">1.290.000</span><span class="price-currency">₫</span>
+                                </ins>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/củ111.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>Sạc 20W USB-C Power Adapter</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <del>
+                                    <span class="price-amount">690.000</span><span class="price-currency">₫</span>
+                                </del>
+                                <ins>
+                                    <span class="price-amount">520.000</span><span class="price-currency">₫</span>
+                                </ins>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/1-12-e1625197512628.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>Ốp lưng iPhone 12|12 Pro Clear Case with MagSafe MHLM3ZA/A</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <del>
+    
+                                </del>
+                                <ins>
+                                    <span class="price-amount">1.430.000</span><span class="price-currency">₫</span>
+                                </ins>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="see-all-iphone">
+                        <button><a href="#">Xem tất cả Phụ kiện<span class="mui-ten"> ></span></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="element-sanpham">
+                <div class="box-container">
+                    <div class="title">
+                        <h2>Dịch vụ</h2>
+                    </div>
+                    <div class="danhmuc-sanpham" id="laoderService">
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/apple-care.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>Apple Care</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <p>Giá từ 690.000₫</p>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/BHKC-02-1-1536x1536.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>Bảo hành kim cương</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <p>Giá từ 199.000₫</p>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/Microsoft-Office-1.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>Office 365</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <p>Giá từ 990.000₫</p>
+                            </div>
+                        </div>
+                        <div class="box-element-sanpham-1">
+                            <div class="pictures"><img src="./img/Apple-school-manager-1.png" alt=""></div>
+                            <div class="title-sanpham">
+                                <p>Apple School Manager</p>
+                            </div>
+                            <div class="price-sanpham">
+                                <p>Dành cho trường học</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="see-all-iphone">
+                        <button><a href="#">Xem tất cả Dịch vụ<span class="mui-ten"> ></span></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-tu-shopUcha">
+            <div class="box-container-subscribe">
+                <div class="box-subscribe-tu-shopUcha">
+                    <div class="subscribe-top-shopUcha">
+                        <h2>Đăng ký nhận từ shopUcha</h2>
+                        <p>Thông tin sản phẩm mới nhất và chương trình khuyến mãi</p>
+                    </div>
+                    <div class="subscribe-bottom-shopUcha">
+                        <form action="">
+                            <input class="nhap-thong-tin" type="text" placeholder="Email của bạn">
+                            <button type="submit" class="dang-ky"><span>Đăng ký</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="gioi-han-rong-footer">
+                <div class="box-container-footer">
+                    <div class="flex-footer-box">
+                        <div class="pr-thuong-hieu-footer">
+                            <div class="logo-shopUcha">
+                                <img src="./img/7600848499_0f8b365e-ac63-41cb-9653-0e62ef28d5b3.png" alt="">
+                            </div>
+                            <div class="revews-shopUcha">
+                                <p>Năm 2020, ShopUcha trở thành đại lý ủy quyền của Apple. Chúng tôi phát triển chuỗi
+                                    cửa
+                                    hàng
+                                    tiêu chuẩn và Apple Mono Store nhằm mang đến trải nghiệm tốt nhất về sản phẩm và
+                                    dịch vụ
+                                    của
+                                    Apple cho người dùng Việt Nam.</p>
+                            </div>
+                            <ul class="logo-thongtin-ve-thuongmai">
+                                <li><a href="#"><svg width="50" height="50" fill="none">
+                                            <circle cx="25" cy="25" r="24" stroke="#515154" stroke-width="2"></circle>
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </svg></a></li>
+                                <li><a href="#"><svg width="50" height="50" fill="none">
+                                            <circle cx="25" cy="25" r="24" stroke="#515154" stroke-width="2"></circle>
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </svg></a></li>
+                                <li><a href="#"><svg width="50" height="50" fill="none">
+                                            <circle cx="25" cy="25" r="24" stroke="#515154" stroke-width="2"></circle>
+                                            <i class="fa-brands fa-mandalorian"></i>
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                        <div class="box-sanpham-footer">
+                            <div class="element-sanpham-footer">
+                                <div class="box-san123">
+                                    <div class="title-sanham-footer">
+                                        <h2 class="title-sanpham-footer-1">Sản phẩm</h2>
+                                    </div>
+                                    <div class="element-87b620">
+                                        <ul>
+                                            <li><a href="#">iPhone</a></li>
+                                            <li><a href="#">iPad</a></li>
+                                            <li><a href="#">Mac</a></li>
+                                            <li><a href="#">Apple Watch</a></li>
+                                            <li><a href="#">Âm thanh</a></li>
+                                            <li><a href="#">Phụ kiện</a></li>
+                                            <li><a href="#">Dịch vụ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-thongtin-footer">
+                            <div class="element-thongtin-footer">
+                                <div class="title-thongtin-footer">
+                                    <h2 class="title-sanpham-footer-1">Thông tin</h2>
+                                </div>
+                                <div class="element-87b620">
+                                    <ul>
+                                        <li><a href="#">Giới thiệu</a></li>
+                                        <li><a href="#">Khuyến mãi</a></li>
+                                        <li><a href="#">Bảo hành và sữa chữa</a></li>
+                                        <li><a href="#">Tuyển dụng</a></li>
+                                        <li><a href="#">Tin tức</a></li>
+                                        <li><a href="#">Check IMEI</a></li>
+                                        <li><a href="#">Phương thức thanh toán</a></li>
+                                        <li><a href="#">Gủi góp ý, khiếu nại</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-chinhsach-footer">
+                            <div class="element-chinhsach-footer">
+                                <div class="title-chinhsach-footer">
+                                    <h2 class="title-sanpham-footer-1">Chính sách</h2>
+                                </div>
+                                <div class="element-87b620">
+                                    <ul>
+                                        <li><a href="#">Trả góp</a></li>
+                                        <li><a href="#">Giao hàng</a></li>
+                                        <li><a href="#">Giao hàng (ZaloPay)</a></li>
+                                        <li><a href="#">Huỷ giao dịch</a></li>
+                                        <li><a href="#">Đổi trả</a></li>
+                                        <li><a href="#">Bảo hành</a></li>
+                                        <li><a href="#">Giải quyết khiếu nại</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-diachi-footer">
+                            <div class="element-diachi-footer">
+                                <div class="title-diachi-footer">
+                                    <h2 class="title-sanpham-footer-1">Địa chỉ</h2>
+                                </div>
+                                <div class="element-87b620">
+                                    <ul>
+                                        <li><a href="#">Tìm Store trên Google Map</a></li>
+                                        <li><a href="#">Hệ thống cửa hàng</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="element-lienhe-footer">
+                                <div class="title-lienhe-footer">
+                                    <h2 class="title-sanpham-footer-1">Liên hệ</h2>
+                                </div>
+                                <div class="element-87b624">
+                                    <p>
+                                        Mua hàng: <a href="#">0962620070</a>
+                                    </p>
+                                    <p>
+                                        Khiếu nại: <a href="#">0953487564</a>
+                                    </p>
+                                    <p>
+                                        Doanh nghiệp & đối tác: <a href="#">0381182331</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thiet-ke">
+                    <div class="box">
+                        <p class="du-an" >Performer: <span id="boxTk"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="showload" id="loader">
+        <div class="loader" ></div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.min.js"
+    integrity="sha512-NCiXRSV460cHD9ClGDrTbTaw0muWUBf/zB/yLzJavRsPNUl9ODkUVmUHsZtKu17XknhsGlmyVoJxLg/ZQQEeGA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- js carousel -->
+<script src="./js/Server/callApi.js"></script>
+<script src="./js/controller/main.js"></script>
+<script>
+    $(document).ready(function () {
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: NodeFilter,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: NodeFilter
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+        })
+    });
+</script>
+<script src="./js/view/footer.js" type="module"></script>
+<script src="./js/view/amount.js"></script>
+<script src="./js/view/navMenu.js"></script>
+<script src="./js/view/productsIndex.js"></script>
+</html>

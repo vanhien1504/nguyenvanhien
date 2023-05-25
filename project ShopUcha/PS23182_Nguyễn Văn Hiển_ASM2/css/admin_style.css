@@ -1,0 +1,35 @@
+
+body{
+    background-color: red;
+    font-family: arial;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    text-align: center;
+}
+.product-item{
+    width: 100%;
+}
+.product-item-left{
+    float: left;
+    width: 40%;
+    background-color: aqua;
+    height: auto;
+}
+.product-item-right{
+    float: right;
+    width: 60%;
+    height: auto;
+}
+.product-item-right table{
+    width: 60%;
+}
+.image012{
+    width: 100px;
+}
